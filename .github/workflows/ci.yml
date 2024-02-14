@@ -27,7 +27,7 @@ jobs:
           context: ./django
           file: ./django/Dockerfile
           push: true
-          tags: my-django-app:latest
+          tags: slederman/my-django-app:latest
 
       - name: Build and push React Docker Image
         uses: docker/build-push-action@v2
@@ -35,7 +35,7 @@ jobs:
           context: ./react
           file: ./react/Dockerfile
           push: true
-          tags: my-react-app:latest
+          tags: slederman/my-react-app:latest
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
