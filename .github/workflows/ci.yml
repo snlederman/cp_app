@@ -44,6 +44,8 @@ jobs:
           username: ec2-user
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            docker-compose down
-            docker-compose pull
-            docker-compose up -d
+            script: |
+              /usr/local/bin/docker-compose -f /home/ec2-user/cp_app/docker-compose.yml down
+              /usr/local/bin/docker-compose -f /home/ec2-user/cp_app/docker-compose.yml pull
+              /usr/local/bin/docker-compose -f /home/ec2-user/cp_app/docker-compose.yml up -d
+
