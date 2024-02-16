@@ -18,8 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from csv_processor.views import upload_csv
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload-csv/', upload_csv, name='upload_csv'),
+    path('', TemplateView.as_view(template_name='index.html')),
 ]
