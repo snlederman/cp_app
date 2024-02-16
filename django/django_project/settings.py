@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # React's default port
+    'http://34.229.235.201:3000',  # React's default port
 ]
 
 ROOT_URLCONF = 'django_project.urls'
