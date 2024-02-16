@@ -16,7 +16,7 @@ function FileUpload() {
         formData.append('file', file);
 
         try {
-            const response = await axios.post('http://localhost:8000/upload-csv/', formData);
+            const response = await axios.post('http://34.229.235.201:8000/upload-csv/', formData);
             setTableData(response.data.data); // Assuming 'data' is the key in the JSON response
             setUploadStatus('File uploaded successfully.');
         } catch (error) {
