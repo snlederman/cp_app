@@ -4,6 +4,11 @@ from django.views.decorators.csrf import csrf_exempt
 import cProfile
 import pstats
 import io
+from django.shortcuts import render
+
+
+def index(request):
+    return render(request, 'index.html')
 
 
 @csrf_exempt
