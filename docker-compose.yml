@@ -8,6 +8,8 @@ services:
     ports:
       - "8000:8000"
   react:
+    environment:
+      - HOST=0.0.0.0
     build: ./react
     ports:
       - "3000:3000"
