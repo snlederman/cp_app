@@ -149,5 +149,10 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
+        'csv_processor': {  # Assuming 'csv_processor' is the name of your Django app
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
     },
 }
